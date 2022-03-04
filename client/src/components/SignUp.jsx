@@ -77,7 +77,7 @@ export default function SignUp() {
             .then(() => console.log('email sent!'))
           setRegistered(true);
         }
-      });
+      }).catch(err => console.log(err));
     } else {
       setValidData(false);
     }
